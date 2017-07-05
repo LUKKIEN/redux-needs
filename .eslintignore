@@ -1,0 +1,7 @@
+.npm
+.test-reports
+.vscode
+coverage
+docs
+node_modules
+dist
