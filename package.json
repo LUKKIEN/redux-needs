@@ -1,0 +1,9 @@
+{
+  "name": "redux-needs",
+  "version": "1.0.0",
+  "description": "Wrapping everyday data to your containers in need",
+  "main": "index.js",
+  "repository": "https://github.com/LUKKIEN/redux-needs.git",
+  "author": "Janneke Janssen <j.janssen@lukkien.com>",
+  "license": "BSD-3-Clause"
+}
