@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/LUKKIEN/redux-needs.git",
   "author": "Janneke Janssen <j.janssen@lukkien.com>",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "test": "echo \"Implement testcases\""
+  }
 }
