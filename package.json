@@ -52,15 +52,19 @@
         "eslint-plugin-react": "7.0.1",
         "husky": "^0.14.3",
         "jest": "^20.0.4",
+        "prop-types": "^15.5.10",
+        "react": "15.6.1",
         "react-dom": "15.6.1",
+        "react-redux": "5.0.5",
         "react-test-renderer": "15.6.1",
+        "redux": "3.7.0",
         "redux-mock-store": "1.2.3",
         "webpack": "2.6.1"
     },
-    "dependencies": {
-        "prop-types": "^15.5.10",
-        "react": "15.6.1",
-        "react-redux": "5.0.5",
-        "redux": "3.7.0"
+    "peerDependencies": {
+        "react": "15.5.x",
+        "react-redux": "5.x.x",
+        "redux": "3.7.x",
+        "prop-types": "15.5.x"
     }
 }
