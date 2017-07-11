@@ -7,7 +7,7 @@ export default needs => Component =>
     connect(
         null,
         dispatch => ({
-            dispatchNeeds: (props, nextProps) => Promise.all(
+          dispatchNeeds: (props, nextProps) => Promise.all(
                 needs.map(needDispatcher(dispatch, props, nextProps)),
             ),
         }),
