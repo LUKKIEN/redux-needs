@@ -17,20 +17,20 @@
       "needs",
       "async"
   ],
+  "jest": {
+    "cacheDirectory": "./node_modules/.jest-cache",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "roots": ["src"]
+  },
   "scripts": {
       "build": "webpack --optimize-minimize --progress --colors --config webpack.config.babel.js",
       "clean": "rimraf ./dist",
-      "lint": "yarn run lint:js",
-      "lint:ci": "eslint .",
-      "lint:js": "eslint .",
-      "lint:js:fix": "eslint --fix .",
+      "lint": "eslint .",
+      "lint:fix": "eslint --fix .",
       "prepush": "yarn test && yarn lint",
-      "test": "yarn run test:dev",
-      "test:ci": "jest --coverage --config=jest.config.json --runInBand --setupTestFrameworkScriptFile=./scripts/jasmine-reporter.js",
-      "test:dev": "jest --coverage --config=jest.config.json",
-      "test:update": "jest --updateSnapshot --config=jest.config.json",
-      "watch": "yarn run watch:test",
-      "watch:test": "jest --watch --config=jest.config.json"
+      "test": "jest",
+      "test:ci": "yarn run test && codecov"
   },
   "devDependencies": {
       "babel-core": "6.25.0",
