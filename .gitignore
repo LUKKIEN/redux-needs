@@ -11,12 +11,6 @@ log
 node_modules
 npm-debug.log
 yarn-error.log
-_book
-locales/**/*-prev.json
-static/assets/css/*
-static/assets/scripts/*
 compiled
 .project
 .settings
-
-config/local.json
