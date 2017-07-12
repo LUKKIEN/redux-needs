@@ -1,4 +1,4 @@
-import shallowEqual from 'react-redux/lib/utils/shallowEqual';
+import shallowequal from 'shallowequal';
 import mapParams from './map-params';
 
 export default (dispatch, props, nextProps) => (need) => {
@@ -25,7 +25,7 @@ export default (dispatch, props, nextProps) => (need) => {
   const needProps = mapParams(need.props || [], props);
 
   // re-fire if props have changed, or no explicit props are mentioned
-  if (!need.props || !shallowEqual(needProps, nextNeedProps)) {
+  if (!need.props || !shallowequal(needProps, nextNeedProps)) {
     return dispatch(action);
   }
 

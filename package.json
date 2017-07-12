@@ -45,7 +45,8 @@
     "defaultDryRun": "true"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "shallowequal": "^1.0.2"
   },
   "peerDependencies": {
     "react": "^15.5.x",
