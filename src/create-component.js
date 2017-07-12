@@ -32,7 +32,7 @@ export default (Component) => {
       };
       return <Component {...otherProps} />;
     }
-    }
+  }
 
   if (Component.defaultProps) {
     NeedyComponent.defaultProps = Component.defaultProps;
