@@ -3,7 +3,7 @@ import mapParams from './map-params';
 
 export default (dispatch, props, nextProps) => (need) => {
   if (typeof need === 'function') {
-        // need without props, will only fire on componentDidMount
+    // need without props, will only fire on componentDidMount
     if (props) {
       return Promise.resolve();
     }
@@ -18,13 +18,13 @@ export default (dispatch, props, nextProps) => (need) => {
   const action = need.action(nextNeedProps);
 
   if (!props) {
-        // componentDidMount, so we should always dispatch
+    // componentDidMount, so we should always dispatch
     return dispatch(action);
   }
 
   const needProps = mapParams(need.props || [], props);
 
-    // re-fire if props have changed, or no explicit props are mentioned
+  // re-fire if props have changed, or no explicit props are mentioned
   if (!need.props || !shallowEqual(needProps, nextNeedProps)) {
     return dispatch(action);
   }
