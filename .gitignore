@@ -7,10 +7,11 @@
 .vscode
 
 coverage
+compiled
+dist
 log
 node_modules
 npm-debug.log
 yarn-error.log
-compiled
 .project
 .settings
