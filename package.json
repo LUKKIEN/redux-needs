@@ -22,8 +22,9 @@
         "coverageDirectory": "./coverage/",
         "collectCoverage": true,
         "roots": [
-            "tests"
-        ]
+            "<rootDir>/tests/"
+        ],
+        "testMatch": ["**/tests/**/*.js"]
     },
     "scripts": {
         "build": "webpack --optimize-minimize --progress --colors --config webpack.config.babel.js",
