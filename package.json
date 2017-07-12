@@ -29,7 +29,7 @@
     ]
   },
   "scripts": {
-    "build": "yarn run clean && babel src --out-dir lib && cp README.md ./lib",
+    "build": "yarn run clean && babel src --out-dir lib && cp LICENSE README.md ./lib",
     "clean": "rimraf lib",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
