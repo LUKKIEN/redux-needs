@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import configureMockStore from 'redux-mock-store';
 import PropTypes from 'prop-types';
 
-import createComponent from '../create-component';
+import createComponent from '../src/create-component';
 
 const mockStore = configureMockStore();
 const store = mockStore({});

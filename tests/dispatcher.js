@@ -1,4 +1,4 @@
-import needDispatcher from '../dispatcher';
+import needDispatcher from '../src/dispatcher';
 
 describe('needDispatcher', () => {
   const dispatch = jest.fn(() => Promise.resolve());

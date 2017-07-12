@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import configureMockStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 
-import needs from '../needs';
+import needs from '../src/needs';
 
 const mockStore = configureMockStore();
 const store = mockStore({});

@@ -22,7 +22,7 @@
         "coverageDirectory": "./coverage/",
         "collectCoverage": true,
         "roots": [
-            "src"
+            "tests"
         ]
     },
     "scripts": {

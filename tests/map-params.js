@@ -1,4 +1,4 @@
-import mapParams from '../map-params';
+import mapParams from '../src/map-params';
 
 describe('mapParams', () => {
   const originalObject = {
