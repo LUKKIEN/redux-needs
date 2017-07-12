@@ -1,5 +1,5 @@
 {
-  "name": "redux-needs",
+  "name": "@lukkien/redux-needs",
   "version": "1.0.0-beta.3",
   "description": "Wrapping everyday data to your containers in need",
   "main": "lib/index.js",
