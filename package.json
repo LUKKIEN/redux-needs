@@ -35,6 +35,7 @@
     "lint:fix": "eslint --fix .",
     "prepush": "yarn test && yarn lint",
     "release": "release",
+    "release:alpha": "release --preid alpha",
     "release:next": "release --preid beta --tag next",
     "test": "jest",
     "test:ci": "yarn run test && codecov"
