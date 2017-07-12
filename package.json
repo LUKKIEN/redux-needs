@@ -1,6 +1,6 @@
 {
   "name": "@lukkien/redux-needs",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.0",
   "description": "Wrapping everyday data to your containers in need",
   "main": "lib/index.js",
   "repository": "git@github.com:LUKKIEN/redux-needs.git",
