@@ -5,10 +5,14 @@ describe('mapParams', () => {
     key1: 'hello',
     key2: 'world',
     key3: 'test',
+    key4: {
+      deep: 'props',
+      with: 'multiple',
+    },
   };
 
   it('should return a new object containing the property keys', () => {
-    const keys = ['key1', 'key2'];
+    const keys = ['key1', 'key2', 'key4.deep'];
     const object = { ...originalObject };
     const result = mapParams(keys, object);
 
@@ -16,6 +20,9 @@ describe('mapParams', () => {
     expect(result).toEqual({
       key1: 'hello',
       key2: 'world',
+      key4: {
+        deep: 'props',
+      },
     });
   });
 
