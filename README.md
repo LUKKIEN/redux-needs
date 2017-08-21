@@ -2,8 +2,8 @@
 
 > 🎁 Wrapping everyday data to your containers in need 🎁
 
-Bind actions to changes in your redux state based on the needs of your active
-redux components.
+Bind actions to changes in your Redux state based on the needs of your active
+Redux components.
 
 [Usage](#usage) |
 [API](#api) |
@@ -17,8 +17,8 @@ redux components.
 Dispatch the `ping` action when `MyComponent` is mounted.
 
 ```js
-import needs from 'redux-needs';
 import React from 'react';
+import needs from 'redux-needs';
 
 const ping = () => ({
   type: 'PING',
@@ -38,8 +38,8 @@ Dispatch the `ping` action when `MyComponent` is mounted and again every
 time the value of the `name` property changes.
 
 ```js
-import needs from 'redux-needs';
 import React from 'react';
+import needs from 'redux-needs';
 
 const ping = () => ({
   type: 'PING',
@@ -66,7 +66,7 @@ export default needs({
 
 Returns a new binder method which, when called with a component, will return the
 component wrapped with the configured bindings. This method is compatible with
-the [redux compose](http://redux.js.org/docs/api/compose.html#composefunctions)
+the [Redux compose](http://redux.js.org/docs/api/compose.html#composefunctions)
 method.
 
 - `bindings` (required) - an array containing [bindings](#bindings)
@@ -138,6 +138,15 @@ Or with [yarn](https://yarnpkg.com/) installed, run
 ```
 $ yarn add redux-needs
 ```
+
+## Peer dependencies
+
+This library uses the following peer dependencies, which will probably already
+be included in your project if it's uses Redux and React:
+
+* _react_: 15.5.x
+* _react-redux_: 5.x.x
+* _redux_: 3.7.x
 
 ## License
 
