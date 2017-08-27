@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Needs method should call funcion-style needs with all props of the component 1`] = `
+Array [
+  Object {
+    "type": "SOME_ACTION",
+  },
+  Object {
+    "type": "SOME_OTHER_ACTION",
+  },
+]
+`;
+
+exports[`Needs method should call prop-style needs with all props relevant to the need 1`] = `
+Array [
+  Object {
+    "type": "SOME_ACTION",
+  },
+  Object {
+    "type": "SOME_OTHER_ACTION",
+  },
+]
+`;
+
+exports[`Needs method should gracefully handle non-existent props 1`] = `
+Array [
+  Object {
+    "type": "SOME_ACTION",
+  },
+]
+`;
