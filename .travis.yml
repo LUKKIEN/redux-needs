@@ -11,5 +11,5 @@ cache:
     - $HOME/.yarn-cache
     - node_modules
 
-test:
+script:
   - yarn test:ci
