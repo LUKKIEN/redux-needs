@@ -51,7 +51,7 @@
     "shallowequal": "^1.0.2"
   },
   "peerDependencies": {
-    "react": "^15.5.x",
+    "react": "^15.5.x || ^16.0.0",
     "react-redux": "^5.x.x",
     "redux": "^3.7.x"
   },
